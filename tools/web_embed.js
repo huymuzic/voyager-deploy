@@ -1,9 +1,12 @@
 /**
  * Generates the script with base_url, to simply embed a chatbot in web page
- * @param {String} base_url The url to send request, default `http://localhost:8000`
+ * @param {String} base_url The url to send request, default `http://ec2-3-0-54-28.ap-southeast-1.compute.amazonaws.com:8000`
  */
-export function generateScript(base_url = 'http://localhost:8000', max_tokens = 128) {
-    return `
+export function generateScript(
+  base_url = "http://ec2-3-0-54-28.ap-southeast-1.compute.amazonaws.com:8000",
+  max_tokens = 128
+) {
+  return `
 (function() {
     'use strict';
 
@@ -381,5 +384,5 @@ const styles = \`
     document.querySelector('#voyager-chatbox .icon.cancel').onclick = 
         ()=>chatbox.classList.replace('expanded', 'folded');
     document.querySelector('#voyager-chatbox form.input-message-form').onsubmit = submitMessage;
-})();`
+})();`;
 }

@@ -13,5 +13,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-await fetch('http://localhost:8000/healthy');
-console.log('Healthy check passed.')
+await fetch(
+  "http://ec2-3-0-54-28.ap-southeast-1.compute.amazonaws.com:8000/healthy"
+);
+console.log("Healthy check passed.");

@@ -13,7 +13,7 @@
   },
   "servers": [
     {
-      "url": "http://localhost:8000"
+      "url": "http://ec2-3-0-54-28.ap-southeast-1.compute.amazonaws.com:8000"
     }
   ],
   "tags": [
@@ -97,7 +97,7 @@
             "in": "query",
             "name": "base_url",
             "type": "string",
-            "description": "The base url of request, usually the url of this page you are looking at. Default http://localhost:8000."
+            "description": "The base url of request, usually the url of this page you are looking at. Default http://ec2-3-0-54-28.ap-southeast-1.compute.amazonaws.com:8000."
           }
         ],
         "responses": {
